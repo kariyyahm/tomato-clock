@@ -5,6 +5,7 @@ import { formatTime } from '../../utils/util'
 Page({
   data: {
     logs: [],
+    pp: []
   },
   onLoad() {
     this.setData({
