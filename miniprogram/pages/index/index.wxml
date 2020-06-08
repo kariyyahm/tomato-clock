@@ -1,13 +1,23 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <!-- <view class="userinfo"> -->
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text>hahahhahahhahahah</text>
     </block>
+  </view> -->
+  <view class="set-time">
+    <picker-view class="picker-timer" value="{{value}}" bindchange="bindChange">
+      <picker-view-column class="picker-column">
+        <view wx:for="{{times}}" wx:key="*this" id="picker-item">
+        {{item}}{{item === '自定义' ? '' : '分钟'}}</view>
+      </picker-view-column>
+    </picker-view> 
   </view>
-  <view class="usermotto">
+  <button id="start-btn" size="mini">开始专注</button>
+  <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
 </view>

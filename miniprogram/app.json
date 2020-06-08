@@ -1,13 +1,37 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/todo/todo",
+    "pages/logs/logs",
+    "pages/me/me"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0C0C0C",
+    "navigationBarTitleText": "总有人完成你的梦想",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0C0C0C"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "专注"
+      },
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "待办"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "吾身"
+      }
+    ],
+    "color": "#FCFAF2",
+    "backgroundColor": "#0C0C0C",
+    "selectedColor": "#707C74",
+    "borderStyle": "black",
+    "position": "bottom"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

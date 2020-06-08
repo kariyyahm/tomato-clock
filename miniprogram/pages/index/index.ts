@@ -1,13 +1,37 @@
 // index.ts
 // 获取应用实例
 const app = getApp<IAppOption>()
+const times: (number)[] = [5, 10, 15, 20, 25, 30, 45, 60, 90, 120, 180]
+
+// for (let i:number = 5; i<=120; i=i+5) {
+//   times.push(i)
+// }
 
 Page({
+
+  onShow() {
+    return {
+      title: 'picker-view',
+      path: 'page/component/pages/picker-view/picker-view'
+    }
+  },
   data: {
+    times,
+    count: 0,
+    value: 25,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+  },
+  bindChange(e:any) {
+    console.log(e);
+    const val = e.detail.value
+    this.setData({
+      count: this.data.times[val]
+    })
+    console.log(this.data.count);
+    
   },
   // 事件处理函数
   bindViewTap() {
