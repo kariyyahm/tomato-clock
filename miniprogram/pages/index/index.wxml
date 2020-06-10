@@ -10,15 +10,15 @@
   </view> -->
   <view class="set-time">
     <picker-view class="picker-timer" indicator-class="picker-indicator" mask-class="picker-mask" value="{{value}}" bindchange="bindChange">
-    <view class="picker-min">分钟</view>
-    <view class="picker-shadow"></view>
+      <view class="picker-min">分钟</view>
+      <view class="picker-shadow"></view>
       <picker-view-column class="picker-column">
         <view wx:for="{{times}}" wx:key="*this" class="picker-item">
         {{item}}</view>
       </picker-view-column>
     </picker-view> 
   </view>
-  <button class="start-btn" size="mini">开始专注</button>
+  <button class="start-btn" size="mini" bindtap="startFoucs">开始专注</button>
   <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view> -->

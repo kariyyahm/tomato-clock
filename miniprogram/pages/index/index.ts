@@ -8,7 +8,6 @@ const times: (number)[] = [5, 10, 15, 20, 25, 30, 45, 60, 90, 120, 180]
 // }
 
 Page({
-
   onShow() {
     return {
       title: 'picker-view',
@@ -19,10 +18,14 @@ Page({
     times,
     count: 0,
     value: 25,
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+  },
+  startFoucs() {
+    wx.redirectTo({
+      url: '../../pages/foucsing/foucsing?count=' + this.data.count
+    })
   },
   bindChange(e:any) {
     console.log(e);
