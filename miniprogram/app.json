@@ -17,15 +17,21 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "专注"
+        "text": "专注",
+        "iconPath": "imgs/zhuanzhu.png",
+        "selectedIconPath": "imgs/zhuanzhu.png"
       },
       {
         "pagePath": "pages/todo/todo",
-        "text": "待办"
+        "text": "待办",
+        "iconPath": "imgs/daiban.png",
+        "selectedIconPath": "imgs/daiban.png"
       },
       {
         "pagePath": "pages/me/me",
-        "text": "吾身"
+        "text": "吾身",
+        "iconPath": "imgs/wode.png",
+        "selectedIconPath": "imgs/wode.png"
       }
     ],
     "color": "#FCFAF2",

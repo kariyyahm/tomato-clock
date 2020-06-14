@@ -1,0 +1,8 @@
+<!--pages/foucsing/foucsing.wxml-->
+<view class="container">
+  <view class="timer-wrap">
+    <view class="timer-content">{{count}}</view>
+  </view>
+  <button class="start-btn" size="mini" bindtap="onPause">{{isGoOn ? '继续' : '暂停'}}</button>
+  <button class="finish-btn" size="mini" bindtap="finish">完 成</button>
+</view>

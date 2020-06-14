@@ -1,0 +1,45 @@
+/* pages/foucsing/foucsing.wxss */
+.container {
+  background-color: #0C0C0C;
+  height: 100vh;
+}
+
+.timer-wrap {
+  box-sizing: border-box;
+  background-color: #0C0C0C;
+  width: 250px; 
+  height: 250px;
+  border: 2px solid #707C74;
+  border-radius: 250px;
+  overflow: hidden;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-content {
+  border: 1px solid red;
+  line-height: 50px; 
+  height: 50px;
+  font-size: 26px;
+  text-align: center;
+  color: #FCFAF2;
+}
+
+.start-btn {
+  width: 120px  !important;
+  border-radius: 30px  !important;
+  font-weight: normal  !important;
+  font-size: 12px  !important;
+  line-height: 40px  !important;
+  max-height: 40px  !important;
+}
+
+.finish-btn {
+  width: 80px  !important;
+  font-size: 14px  !important;
+  color: #707C74 !important;
+  background-color: #0C0C0C !important;
+  margin-top: -60px !important;
+}
